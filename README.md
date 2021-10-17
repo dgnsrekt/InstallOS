@@ -46,7 +46,7 @@ sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-t
 
 ```
 
-## Install Nerd font
+## Install Mononoki Nerd font
 ```bash
 cd ~/.local/share
 
@@ -109,7 +109,7 @@ echo $PATH
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 ```
-* Ensure .zshrs/.bashrc has the init script at the end of the configfiles.
+* Ensure [.zshrs](.zshrs) / [.bashrc](.bashrc) has the init script at the end of the configfiles.
 ```bash
 # ~/.bashrc
 
