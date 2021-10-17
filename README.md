@@ -24,23 +24,22 @@ sudo apt install gnome-session
 * Restart computer and login with gnome.
 
 ## Install Chrome
-* [Chrome link](https://www.google.com/chrome/)
+* [Google Chrome](https://www.google.com/chrome/)
 
-## Install Standard Applications #TODO: add links
-* htop
+## Install Standard Applications
+* [htop](https://github.com/htop-dev/htop)
 * gdebi
-* glances
-* neovim
-* tmux
+* [glances](https://nicolargo.github.io/glances/)
+* [neovim](https://github.com/neovim/neovim)
+* [tmux](https://github.com/tmux/tmux)
 * zsh
 * tree
-* lolcat
-* neofetch
+* [lolcat](https://github.com/jaseg/lolcat)
+* [neofetch](https://github.com/dylanaraps/neofetch)
 * gnome-tweak-tool
-* snapd
-* [bpytop](https://github.com/aristocratos/bpytop)
+* [snapd](https://snapcraft.io/snapd)
 * [batcat](https://github.com/sharkdp/bat#installation)
-
+* [bpytop](https://github.com/aristocratos/bpytop)
 ```bash
 sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop -y
 
@@ -64,8 +63,8 @@ fc-list | grep "mononoki"
 
 ```
 
-## Install Spacevim 
-* [SpaceVim Link](https://spacevim.org/)
+## Install SpaceVim 
+* [SpaceVim](https://spacevim.org/)
 ```bash
 curl -sLf https://spacevim.org/install.sh | bash
 ```
