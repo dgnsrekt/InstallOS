@@ -94,6 +94,10 @@ alias vimconfig="vim ~/.SpaceVim.d/init.toml"
 
 alias ll="ls -lah"
 
+function play_movie(){
+    cvlc --fullscreen --no-video-title-show $1 vlc://quit
+}
+
 # STARSHIP CROSS-SHELL PROMPT / https://starship.rs/
 eval "$(starship init zsh)" 
 

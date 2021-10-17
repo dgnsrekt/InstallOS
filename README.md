@@ -157,6 +157,8 @@ sudo apt install httpie pkg-config libssl-dev
 
 ## Install NVM/Node
 
+## Install Docker
+
 ## Install VSCode
 
 ## Install Third Party Desktop Applications
