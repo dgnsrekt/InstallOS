@@ -116,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Sets PATH so it includes user's private bin if it exists
+# Needed for pipx and userpath
+if [ -d "$HOME/.local/bin" ] ; then
+PATH="$HOME/.local/bin:$PATH"
+fi
+
 # GPG key for github
 if [ -r ~/.bash_profile ]; then echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile; \
   else echo 'export GPG_TTY=$(tty)' >> ~/.profile; fi

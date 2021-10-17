@@ -158,6 +158,20 @@ sudo apt install httpie pkg-config libssl-dev
 ```
 
 ## Install Python
+* Install pip / virtualenv / pipx
+```bash
+sudo apt install python3-pip python3-venv -y
+python3 -m pip install --user pipx
+```
+* Ensure [.zshrc](.zshrc) / [.bashrc](.bashrc) have the $HOME/.local/bin set.
+```bash
+# set PATH so it includes user's private bin if it exists
+# Needed for pipx / userpath
+if [ -d "$HOME/.local/bin" ] ; then
+PATH="$HOME/.local/bin:$PATH"
+fi
+
+```
 
 ## Install Rust
 
