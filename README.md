@@ -153,7 +153,7 @@ git config --global commit.gpgsign true
 
 ## Install Dev Extras
 ```bash
-sudo apt install httpie pkg-config libssl-dev
+sudo apt install httpie pkg-config libssl-dev build-essential -y
 
 ```
 
@@ -184,6 +184,31 @@ pipx install pytest-watch
 ## Install Rust
 
 ## Install NVM/Node
+* Install Node Version Manager
+```bash
+sudo apt-get install build-essential libssl-dev -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+```
+* Ensure [.zshrc](.zshrc) / [.bashrc](.bashrc) have the NVM export
+```bash
+# Export for Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+```
+* Check NVM version
+```bash
+nvm --version
+
+```
+* Install Node
+```bash
+nvm install 12
+
+```
+
 
 ## Install Docker
 
