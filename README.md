@@ -1,7 +1,7 @@
 # InstallOS - Desktop setup
 
 ## Install PopOS
-* [PopOS link](https://pop.system76.com/)
+* [PopOS](https://pop.system76.com/)
 
 ## Create common folders 
 ```bash
@@ -40,8 +40,9 @@ sudo apt install gnome-session
 * [snapd](https://snapcraft.io/snapd)
 * [batcat](https://github.com/sharkdp/bat#installation)
 * [bpytop](https://github.com/aristocratos/bpytop)
+* [ffmpeg](https://ffmpeg.org/)
 ```bash
-sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop -y
+sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg -y
 
 ```
 
@@ -167,14 +168,34 @@ sudo apt install httpie pkg-config libssl-dev
 ## Install VSCode
 
 ## Install Third Party Desktop Applications
-* Telegram
-* Discord
+* [Telegram Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
+* [Discord](https://discord.com/)
 * Slack
-* OBS Studio
-* GitKraken
-* BeeKeeper Studio
-* Spotify
-* Postman
+* [OBS Studio](https://obsproject.com/)
+```bash
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install ffmpeg v4l2loopback-dkms obs-studio -y
+```
+* [GitKraken](https://www.gitkraken.com/)
+* [BeeKeeper Studio Snap](https://snapcraft.io/beekeeper-studio)
+```bash
+sudo snap install beekeeper-studio
+
+```
+* [Spotify](https://www.spotify.com/us/download/linux/)
+```bash
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
+sudo apt update
+sudo apt install spotify-client
+```
+* [Postman](https://snapcraft.io/postman)
+```bash
+sudo snap install postman
+
+```
 
 ## Install Extras
 ```bash
