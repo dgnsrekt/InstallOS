@@ -109,7 +109,7 @@ echo $PATH
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 ```
-* Ensure [.zshrs](.zshrs) / [.bashrc](.bashrc) has the init script at the end of the configfiles.
+* Ensure [.zshrc](.zshrc) / [.bashrc](.bashrc) has the init script at the end of the configfiles.
 ```bash
 # ~/.bashrc
 
