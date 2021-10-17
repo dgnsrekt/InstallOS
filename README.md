@@ -127,10 +127,40 @@ cat ~/.ssh/id_rsa.pub                         # Shows public key
 ssh -T git@github.com
 
 ```
-* Create GPG keys - [STEPS](https://help.github.com/en/articles/generating-a-new-gpg-key)
-* Update GPG keys on Github - [STEPS](https://help.github.com/en/articles/telling-git-about-your-signing-key)
+* Create GPG keys - [Follow steps](https://help.github.com/en/articles/generating-a-new-gpg-key)
+* Update GPG keys on Github - [Follow steps](https://help.github.com/en/articles/telling-git-about-your-signing-key)
 * Update global GPG settings to sign with gpg keys.
 ```bash
 git config --global commit.gpgsign true 
 
 ```
+
+## Install Dev Extras
+```bash
+sudo apt install httpie pkg-config libssl-dev
+
+```
+
+## Install Python
+
+## Install Rust
+
+## Install NVM/Node
+
+## Install VSCode
+
+## Install Third Party Desktop Applications
+* Telegram
+* Discord
+* Slack
+* OBS Studio
+* GitKraken
+* BeeKeeper Studio
+
+## Install Extras
+```bash
+sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7zip-rar rar -y
+
+```
+
+
