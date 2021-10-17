@@ -121,9 +121,16 @@ ssh-add ~/.ssh/id_rsa                         # Adds keys to ssh agent
 cat ~/.ssh/id_rsa.pub                         # Shows public key
 
 ```
-* Copy Public key to GitHub Account Settings > SSH and GPG Keys > SSH keys
+* Copy public key to GitHub Account Settings > SSH and GPG Keys > SSH keys
 * Test SSH key works with github
 ```bash
 ssh -T git@github.com
+
+```
+* Create GPG keys - [STEPS](https://help.github.com/en/articles/generating-a-new-gpg-key)
+* Update GPG keys on Github - [STEPS](https://help.github.com/en/articles/telling-git-about-your-signing-key)
+* Update global GPG settings to sign with gpg keys.
+```bash
+git config --global commit.gpgsign true 
 
 ```
