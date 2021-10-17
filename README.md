@@ -158,10 +158,11 @@ sudo apt install httpie pkg-config libssl-dev
 ```
 
 ## Install Python
-* Install pip / virtualenv / pipx
+* Install pip / virtualenv / [pipx](https://github.com/pypa/pipx/)
 ```bash
 sudo apt install python3-pip python3-venv -y
 python3 -m pip install --user pipx
+
 ```
 * Ensure [.zshrc](.zshrc) / [.bashrc](.bashrc) have the $HOME/.local/bin set.
 ```bash
@@ -172,8 +173,8 @@ PATH="$HOME/.local/bin:$PATH"
 fi
 
 ```
-* [Black](https://github.com/psf/black)
-* [pytest-watch](https://github.com/joeyespo/pytest-watch)
+* Install [Black](https://github.com/psf/black)
+* Install [pytest-watch](https://github.com/joeyespo/pytest-watch)
 ```bash
 pipx install black
 pipx install pytest-watch
