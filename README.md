@@ -172,6 +172,13 @@ PATH="$HOME/.local/bin:$PATH"
 fi
 
 ```
+* [Black](https://github.com/psf/black)
+* [pytest-watch](https://github.com/joeyespo/pytest-watch)
+```bash
+pipx install black
+pipx install pytest-watch
+
+```
 
 ## Install Rust
 
