@@ -91,6 +91,7 @@ export GPG_TTY=$(tty) # for GPG keys
 #
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.SpaceVim.d/init.toml"
+alias cat="batcat --paging=never"
 
 alias ll="ls -lah"
 

@@ -38,9 +38,10 @@ sudo apt install gnome-session
 * neofetch
 * gnome-tweak-tool
 * snapd
+* [batcat](https://github.com/sharkdp/bat#installation)
 
 ```bash
-sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd -y
+sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat -y
 
 ```
 
