@@ -17,6 +17,7 @@ sudo apt upgrade
 sudo apt install gnome-session
 
 ```
+* Restart computer and login with gnome.
 
 ## Install Chrome
 * [Chrome link](https://www.google.com/chrome/)
@@ -85,6 +86,15 @@ curl -sLf https://spacevim.org/install.sh | bash
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+```
+* Logout and log back in.
+* Check the shell and path for any issues.
+```bash
+echo $SHELL
+# Should return zsh.
+
+echo $PATH
+# Check path is clean. No duplicates paths.
 ```
 
 ## Install Startship cross-shell prompt
