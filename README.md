@@ -209,10 +209,21 @@ nvm install 12
 
 ```
 
-
 ## Install Docker
 
-## Install VSCode
+## Install Visual Studio Code
+* [vscode](https://code.visualstudio.com/)
+### Extenstions
+* Install `Python`
+* Install `VIM`
+* Add the following to File > Preferences > Settings > keyboard.dispatch > `keyCode` for vim fix.
+```
+I've swapped Escape and Caps Lock with setxkbmap and VSCodeVim isn't respecting the swap
+This is a known issue in VS Code, as a workaround you can set "keyboard.dispatch": "keyCode" and restart VS Code.
+
+```
+* Install `Markdown All in One`
+* Sync settings
 
 ## Install Third Party Desktop Applications
 * [Telegram Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
