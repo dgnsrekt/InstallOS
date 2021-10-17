@@ -156,6 +156,8 @@ sudo apt install httpie pkg-config libssl-dev
 * OBS Studio
 * GitKraken
 * BeeKeeper Studio
+* Spotify
+* Postman
 
 ## Install Extras
 ```bash
