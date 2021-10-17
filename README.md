@@ -170,7 +170,7 @@ sudo apt install httpie pkg-config libssl-dev
 ## Install Third Party Desktop Applications
 * [Telegram Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
 * [Discord](https://discord.com/)
-* Slack
+* [Slack](https://slack.com/downloads/linux)
 * [OBS Studio](https://obsproject.com/)
 ```bash
 sudo add-apt-repository ppa:obsproject/obs-studio
