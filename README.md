@@ -7,6 +7,10 @@
 ```bash
 mkdir ~/bin
 mkdir ~/Development
+mkdir ~/Development/python
+mkdir ~/Development/javascript
+mkdir ~/Development/rust
+mkdir ~/Development/docker
 
 ```
 
