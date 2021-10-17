@@ -38,10 +38,11 @@ sudo apt install gnome-session
 * neofetch
 * gnome-tweak-tool
 * snapd
+* [bpytop](https://github.com/aristocratos/bpytop)
 * [batcat](https://github.com/sharkdp/bat#installation)
 
 ```bash
-sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat -y
+sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop -y
 
 ```
 
