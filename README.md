@@ -180,6 +180,14 @@ pipx install black
 pipx install pytest-watch
 
 ```
+* Install [isort](https://github.com/PyCQA/isort)
+* Install [pylint](https://github.com/PyCQA/pylint)
+* Install [jedi](https://github.com/davidhalter/jedi)
+```bash
+pipx install isort pylint
+pip install jedi
+
+```
 
 ## Install Rust
 
