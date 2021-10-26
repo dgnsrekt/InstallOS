@@ -7,6 +7,10 @@ if [ -d "$HOME/.local/bin" ] ; then
 PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "/usr/games" ] ; then
+PATH="/usr/games:$PATH"
+fi
+
 # Export for Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -107,6 +111,8 @@ alias cat="batcat --paging=never"
 alias bashtop="bpytop"
 
 alias ll="ls -lah"
+alias redmatrix="cmatrix -a -C red"
+alias lolmatrix="cmatrix -a | lolcat"
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit

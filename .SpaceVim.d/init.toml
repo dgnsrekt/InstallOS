@@ -42,3 +42,13 @@ default_height = 30
 [[custom_plugins]]
   repo = "mhartington/oceanic-next"
   merged = 0
+
+[[layers]]
+  name = "lang#markdown"
+
+[[layers]]
+  name = "tmux"
+
+[[layers]]
+  name = "lang#html"
+
