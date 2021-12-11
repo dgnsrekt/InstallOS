@@ -41,10 +41,11 @@ sudo apt install gnome-session
 * [batcat](https://github.com/sharkdp/bat#installation)
 * [bpytop](https://github.com/aristocratos/bpytop)
 * [ffmpeg](https://ffmpeg.org/)
+* [flameshot](https://github.com/flameshot-org/flameshot)
 * vlc
 
 ```bash
-sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg vlc -y
+sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg flameshot vlc -y
 
 ```
 
@@ -264,7 +265,11 @@ sudo apt install spotify-client
 sudo snap install postman
 
 ```
+* [Krita](https://krita.org/en/)
+```bash
+sudo apt install krita
 
+```
 ## Install Extras
 ```bash
 sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7zip-rar rar -y
