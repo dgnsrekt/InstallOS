@@ -192,6 +192,11 @@ pip install jedi
 ```
 
 ## Install Rust
+* Install latests version of [Rust](https://www.rust-lang.org/tools/install)
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+```
 
 ## Install NVM/Node
 * Install Node Version Manager
