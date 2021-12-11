@@ -225,6 +225,8 @@ nvm install 12
 ```
 
 ## Install Docker
+* Install [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
+* Install [docker-compose](https://docs.docker.com/compose/install/)
 
 ## Install Visual Studio Code
 * [vscode](https://code.visualstudio.com/)
