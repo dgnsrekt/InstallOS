@@ -31,7 +31,6 @@ sudo apt install gnome-session
 * gdebi
 * [glances](https://nicolargo.github.io/glances/)
 * [neovim](https://github.com/neovim/neovim)
-* [tmux](https://github.com/tmux/tmux)
 * zsh
 * tree
 * [lolcat](https://github.com/jaseg/lolcat)
@@ -45,7 +44,7 @@ sudo apt install gnome-session
 * vlc
 
 ```bash
-sudo apt install htop gdebi glances neovim tmux zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg flameshot vlc -y
+sudo apt install htop gdebi glances neovim zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg flameshot vlc -y
 
 ```
 
@@ -268,6 +267,11 @@ sudo snap install postman
 * [Krita](https://krita.org/en/)
 ```bash
 sudo apt install krita
+
+```
+* [Zellij](https://github.com/zellij-org/zellij)
+```bash
+cargo install zellij
 
 ```
 ## Install Extras
