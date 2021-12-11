@@ -164,6 +164,7 @@ sudo apt install httpie pkg-config libssl-dev build-essential -y
 ## Install Python
 * Install pip / virtualenv / [pipx](https://github.com/pypa/pipx/)
 ```bash
+sudo apt install python-is-python3
 sudo apt install python3-pip python3-venv -y
 python3 -m pip install --user pipx
 
