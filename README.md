@@ -223,6 +223,12 @@ nvm --version
 nvm install 12
 
 ```
+* Install [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+```bash
+npm install --global yarn
+
+```
+
 
 ## Install Docker
 * Install [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
