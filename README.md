@@ -67,6 +67,8 @@ fc-list | grep "mononoki"
 ```
 
 ## Install SpaceVim 
+* Note: May need to install nvm/node/yarn before installing markdown-preview.
+* Fix: [markdown-preview.nvim: building failed issue.](https://github.com/SpaceVim/SpaceVim/issues/4234#issuecomment-962674451)
 * [SpaceVim](https://spacevim.org/)
 ```bash
 curl -sLf https://spacevim.org/install.sh | bash
