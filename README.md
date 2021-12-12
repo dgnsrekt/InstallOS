@@ -48,6 +48,14 @@ sudo apt install htop gdebi glances neovim zsh tree lolcat neofetch gnome-tweak-
 
 ```
 
+## Remove Packages
+```bash
+sudo apt remove --purge libreoffice-core
+sudo apt clean
+sudo apt autoremove
+
+```
+
 ## Install Mononoki Nerd font
 ```bash
 cd ~/.local/share
