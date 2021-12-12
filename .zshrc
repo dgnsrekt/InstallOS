@@ -114,6 +114,8 @@ alias ll="ls -lah"
 alias redmatrix="cmatrix -a -C red"
 alias lolmatrix="cmatrix -a | lolcat"
 
+alias tmux="zellij"
+
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
 }
