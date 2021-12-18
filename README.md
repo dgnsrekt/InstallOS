@@ -36,6 +36,7 @@ sudo apt install gnome-session
 * [lolcat](https://github.com/jaseg/lolcat)
 * [neofetch](https://github.com/dylanaraps/neofetch)
 * gnome-tweak-tool
+* [gnome-shell-extensions](https://extensions.gnome.org)
 * [snapd](https://snapcraft.io/snapd)
 * [batcat](https://github.com/sharkdp/bat#installation)
 * [bpytop](https://github.com/aristocratos/bpytop)
@@ -44,7 +45,7 @@ sudo apt install gnome-session
 * vlc
 
 ```bash
-sudo apt install htop gdebi glances neovim zsh tree lolcat neofetch gnome-tweak-tool snapd bat bpytop ffmpeg flameshot vlc -y
+sudo apt install htop gdebi glances neovim zsh tree lolcat neofetch gnome-tweak-tool gnome-shell-extensions snapd bat bpytop ffmpeg flameshot vlc -y
 
 ```
 
@@ -55,6 +56,7 @@ sudo apt clean
 sudo apt autoremove
 
 ```
+
 
 ## Install Mononoki Nerd font
 ```bash
@@ -115,7 +117,7 @@ echo $PATH
 # Check path is clean. No duplicates paths.
 ```
 
-## Install Startship cross-shell prompt
+## Install Starship cross-shell prompt
 * [Starship.rs](https://starship.rs/)
 ```bash
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
