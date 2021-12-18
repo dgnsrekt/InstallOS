@@ -57,6 +57,12 @@ sudo apt autoremove
 
 ```
 
+## Gnome Shell Extensions
+* How to list extensions
+```bash
+gnome-extensions list
+```
+* install all current_gnome_extensions.txt
 
 ## Install Mononoki Nerd font
 ```bash
