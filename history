@@ -1,0 +1,135 @@
+   41  sudo apt install httpie pkg-config libssl-dev build-essential -y\n
+   43  sudo apt install python-is-python3\n
+   47  sudo apt install python3-pip python3-venv -y\n
+   91  sudo apt-get install \\n    ca-certificates \\n    curl \\n    gnupg \\n    lsb-release
+   93  sudo apt update
+   94  sudo apt install docker-ce docker-ce-cli containerd.io
+   95  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   96  sudo apt-get update
+   97  sudo apt-get install \\n    ca-certificates \\n    curl \\n    gnupg \\n    lsb-release
+   99  echo \\n  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\n  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  100  sudo apt-get update
+  101  udo apt-get install docker-ce docker-ce-cli containerd.io
+  102  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  115  sudo apt install ffmpeg
+  116  sudo add-apt-repository ppa:obsproject/obs-studio
+  119  curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
+  120  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list\n
+  121  sudo apt-get update && sudo apt-get install spotify-client\n
+  122  sudo apt install krita
+  123  sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7zip-rar rar -y\n
+  202  sudo apt install -y wmctrl x11-utils bash
+  241  sudo apt install cmatrix
+  279  sudo apt install flameshot
+  367  sudo apt install java-devel
+  627  sudo apt install gnome-shell-extensions\n
+  628  sudo apt install gnome-shell-extension-prefs\n
+ 1599  sudo apt install flatpak
+ 1600  sudo apt install gnome-software-plugin-flatpak
+ 1779  sudo apt update
+ 1780  apt list --upgradable
+ 1781  sudo apt upgrade
+ 2011  sudo apt update
+ 2012  apt list --upgradable
+ 2013  sudo apt upgrade
+ 2107  apt search transmission
+ 2108  sudo apt install transmission
+ 2116  sudo apt autoremove
+ 2132  echo "deb [arch=amd64] http://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
+ 2134  sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg
+ 2135  sudo apt update\n
+ 2136  sudo apt install librewolf -y
+ 2188  sudo apt update
+ 2189  sudo apt list --upgradable
+ 2190  sudo apt upgrade
+ 2232  apt search tmux
+ 2286  sudo apt update
+ 2287  sudo apt upgrade
+ 2288  sudo apt autoclean
+ 2289  sudo apt autoremove
+ 2290  sudo apt upgade
+ 2291  sudo apt upgrade
+ 2292  apt
+ 2293  apt list
+ 2294  apt list | grep install
+ 2295  apt list | grep installed
+ 2296  apt list | grep installed,local
+ 2297  apt list | grep installed
+ 2551  sudo apt install fzf
+ 2995  sudo apt update
+ 2996  sudo apt list --upgradable
+ 2997  sudo apt upgrade
+ 3590  sudo apt update
+ 3591  sud apt upgrade
+ 3592  sudo apt upgrade
+ 3593  sug apt autoremove
+ 3594  sudoe apt autoremove
+ 3595  sudo apt autoremove
+ 3596  sudo apt update
+ 3597  sudo apt upgrade
+ 3613  history | apt
+ 3614  history | grep apt
+   77  cargo install zellij\n
+   79  cargo
+   80  cargo install zellij\n
+ 2224  cd .cargo/bin
+ 2234  cargo install zellij\n
+ 2245  cargo
+ 2752  cargo install botton
+ 2753  cargo install bottom
+ 3599  history | grep cargo
+ 3620  history | grep cargo
+ 1593  flatpak
+ 1594  flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo\n
+ 1595  flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo\n
+ 1596  flatpak install --user gnome-nightly org.gnome.Sdk org.gnome.Platform\n
+ 1597  flatpak install --user flathub org.freedesktop.Sdk.Extension.rust-stable//20.08\n
+ 1598  flatpak-builder --user --install fractal flatpak/org.gnome.Fractal.json\n
+ 1599  sudo apt install flatpak
+ 1600  sudo apt install gnome-software-plugin-flatpak
+ 1602  flatpak override
+ 1604  flatpak install org.gnome.Fractal.flatpakref
+ 1768  flatpak install org.telegram.desktop.flatpakref
+ 2036  flatpak list
+ 2037  flatpak
+ 2038  flatpak --help
+ 2039  cd /var/lib/flatpak
+ 2067  cd ~/.local/share/flatpak
+ 2101  flatpak
+ 2102  flatpak --help
+ 2103  flatpak list
+ 2104  flatpak uninstall Transmission
+ 2191  flatpak --help
+ 2192  flatpak update
+ 2285  flatpak install flathub org.kde.haruna
+ 3625  history | grep flatpak
+  112  snap
+  113  snap search snap-aware
+  114  sudo snap install slack --classic
+  117  sudo snap install beekeeper-studio.
+  118  sudo snap install beekeeper-studio
+  266  cd snap
+  270  snap list
+ 2193  snap -help
+ 2194  snap alias
+ 2195  snap list
+ 2196  snap whoami
+ 2197  snap logs
+ 2198  snap list
+ 2301  snap list
+ 3627  history | grep snap
+   47  sudo apt install python3-pip python3-venv -y\n
+   48  python3 -m pip install --user pipx\n
+   49  pipx 
+   51  pipx
+   52  pipx ensurepath
+   53  pipx
+   54  pipx install black
+   55  pipx install poetry
+   56  pipx install isort
+   57  pipx install pytest-watch
+ 1608  pip install websocket-client sexpdata
+ 1609  pip install pynvim
+ 3010  mkdir pipeline
+ 3011  cd pipeline/
+ 3631  history | grep pip

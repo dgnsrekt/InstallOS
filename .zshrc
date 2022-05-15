@@ -74,7 +74,7 @@ export ZSH="/home/dgnsrekt/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose)
+plugins=(git docker docker-compose kubectl minikube vscode web-search zsh-interactive-cd zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,10 +115,19 @@ alias redmatrix="cmatrix -a -C red"
 alias lolmatrix="cmatrix -a | lolcat"
 
 alias tmux="zellij"
+alias zmux="zellij"
+alias top="btm -b"
+alias htop="btm -b"
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
 }
+
+# Kubectl autocompletion / https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+#source <(kubectl completion zsh)
+
+# Minikube autocompletion ?
+#source <(minikube completion zsh)
 
 # STARSHIP CROSS-SHELL PROMPT / https://starship.rs/
 eval "$(starship init zsh)" 

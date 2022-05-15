@@ -24,35 +24,54 @@
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
 
-# Enable autocomplete layer
-[[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
-
-[[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
-
-[[layers]]
-  name = "lang#python"
-  format_on_save=true
-
 # add custom_plugins: https://github.com/mhartington/oceanic-next
 [[custom_plugins]]
   repo = "mhartington/oceanic-next"
   merged = 0
 
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name = "lang#python"
+  format_on_save=true
+
 [[layers]]
   name = "lang#markdown"
+
+[[layers]]
+  name = "lang#toml"
+
+[[layers]]
+  name = "lang#docker"
 
 [[layers]]
   name = "git"
 
 [[layers]]
   name = "lang#html"
+  format_on_save=true
 
 [[layers]]
   name = "lang#javascript"
   format_on_save=true
+
+[[layers]]
+  name = "lang#typescript"
+  format_on_save=true
+
+#[[layers]]
+#  name = "lang#java"
+
+
+#[[layers]]
+#  name = "lang#scala"
+
