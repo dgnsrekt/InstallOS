@@ -40,7 +40,7 @@ sudo apt install gnome-session
 - tree
 - [lolcat](https://github.com/jaseg/lolcat)
 - [neofetch](https://github.com/dylanaraps/neofetch)
-- gnome-tweak-tool
+- [gnome-tweaks](#)
 - [gnome-shell-extensions](https://extensions.gnome.org)
 - [snapd](https://snapcraft.io/snapd)
 - [batcat](https://github.com/sharkdp/bat#installation)
