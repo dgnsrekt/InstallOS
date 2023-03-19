@@ -122,6 +122,15 @@ curl -sLf https://spacevim.org/install.sh | bash
 - Keyboard > Keyboard Shortcuts > Navigation > Move to Workspace Above add Super+UP
 - Keyboard > Keyboard Shortcuts > Navigation > Move to Workspace Below add Super+Down
 
+```
+$ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-left
+$ gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-right
+
+$ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Right']"
+$ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Left']"
+
+```
+
 ## Install Oh-My-ZSH
 
 - [Oh-My-ZSH](https://ohmyz.sh/)
