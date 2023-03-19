@@ -379,17 +379,23 @@ sudo apt install krita
 
 ```
 
+- [cargo-binstall](https://github.com/cargo-bins/cargo-binstall)
+
+```
+cargo install cargo-binstall
+```
+
 - [Zellij](https://github.com/zellij-org/zellij)
 
 ```bash
-cargo install zellij
+cargo-binstall zellij
 
 ```
 
 - [Bottom](https://crates.io/crates/bottom)
 
 ```bash
-cargo install bottom
+cargo-binstall bottom
 
 ```
 
