@@ -88,7 +88,7 @@ wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Mononoki/
 fc-cache -f -v
 
 # Check if font is installed properly
-fc-list | grep "mononoki"
+fc-list | grep "Mononoki Nerd"
 
 ```
 
