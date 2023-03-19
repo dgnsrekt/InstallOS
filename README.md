@@ -82,7 +82,7 @@ mkdir fonts
 
 cd fonts
 
-wget https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Mononoki/Regular/complete/mononoki-Regular%20Nerd%20Font%20Complete.ttf
+wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Mononoki/Regular/complete/Mononoki%20Nerd%20Font%20Complete%20Regular.ttf?raw=true
 
 # Refresh font cache
 fc-cache -f -v
