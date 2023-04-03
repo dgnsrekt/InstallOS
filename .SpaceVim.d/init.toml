@@ -29,6 +29,10 @@
   repo = "mhartington/oceanic-next"
   merged = 0
 
+[[custom_plugins]]
+  repo = "tribela/vim-transparent"
+  merged = 0
+
 # Enable autocomplete layer
 [[layers]]
   name = 'autocomplete'

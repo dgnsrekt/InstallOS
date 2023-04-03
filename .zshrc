@@ -1,15 +1,22 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+function update_path (){
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
+function checkpath(){
+    echo "${PATH//:/$'\n'}" | sort
+}
+
 # set PATH so it includes user's private bin if it exists
 # Needed for pipx / userpath
-if [ -d "$HOME/.local/bin" ] ; then
-PATH="$HOME/.local/bin:$PATH"
-fi
-
-if [ -d "/usr/games" ] ; then
-PATH="/usr/games:$PATH"
-fi
+update_path "$HOME/bin"
+update_path "$HOME/.local/bin"
+update_path "/usr/local/bin"
+update_path "/usr/games"
 
 # Export for Node Version Manager
 export NVM_DIR="$HOME/.nvm"
@@ -107,6 +114,7 @@ export GPG_TTY=$(tty) # for GPG keys
 #
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.SpaceVim.d/init.toml"
+
 alias cat="batcat --paging=never"
 alias bashtop="bpytop"
 
@@ -118,6 +126,8 @@ alias tmux="zellij"
 alias zmux="zellij"
 alias top="btm -b"
 alias htop="btm -b"
+
+alias echopath="checkpath"
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
@@ -132,4 +142,5 @@ function play_movie(){
 # STARSHIP CROSS-SHELL PROMPT / https://starship.rs/
 eval "$(starship init zsh)" 
 
+clear
 neofetch | lolcat
