@@ -218,6 +218,40 @@ sudo apt install httpie pkg-config libssl-dev build-essential -y
 
 ```
 
+## Install Visual Studio Code
+
+- [vscode](https://code.visualstudio.com/)
+
+### Extenstions
+
+- Install `Python`
+- Install `VIM`
+- Add the following to File > Preferences > Settings > keyboard.dispatch > `keyCode` for vim fix.
+
+```
+I've swapped Escape and Caps Lock with setxkbmap and VSCodeVim isn't respecting the swap
+This is a known issue in VS Code, as a workaround you can set "keyboard.dispatch": "keyCode" and restart VS Code.
+
+```
+
+- Install `Markdown All in One`
+- Sync settings
+
+## Clone InstallOS Repo / Symlink rc files
+
+```bash
+
+cd ~
+rm .bashrc
+rm .zshrc
+
+ln -s ~/InstallOS/.bashrc ~/bashrc
+ln -s ~/InstallOS/.zshrc ~/.zshrc
+
+mkdir ~/.SpaceVim.d
+ln -s ~/InstallOS/.SpaceVim.d/init.toml ~/.SpaceVim.d/init.toml
+```
+
 ## Install Python
 
 - Install pip / virtualenv / [pipx](https://github.com/pypa/pipx/)
@@ -268,6 +302,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```
 
+- [cargo-binstall](https://github.com/cargo-bins/cargo-binstall)
+
+```
+cargo install cargo-binstall
+```
+
 ## Install NVM/Node
 
 - Install Node Version Manager
@@ -315,25 +355,6 @@ npm install --global yarn
 - Install [docker-compose](https://docs.docker.com/compose/install/)
 - Make sure you can run docker without `sudo`.
 
-## Install Visual Studio Code
-
-- [vscode](https://code.visualstudio.com/)
-
-### Extenstions
-
-- Install `Python`
-- Install `VIM`
-- Add the following to File > Preferences > Settings > keyboard.dispatch > `keyCode` for vim fix.
-
-```
-I've swapped Escape and Caps Lock with setxkbmap and VSCodeVim isn't respecting the swap
-This is a known issue in VS Code, as a workaround you can set "keyboard.dispatch": "keyCode" and restart VS Code.
-
-```
-
-- Install `Markdown All in One`
-- Sync settings
-
 ## Install Third Party Desktop Applications
 
 - [Telegram Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
@@ -377,12 +398,6 @@ sudo snap install postman
 ```bash
 sudo apt install krita
 
-```
-
-- [cargo-binstall](https://github.com/cargo-bins/cargo-binstall)
-
-```
-cargo install cargo-binstall
 ```
 
 - [Zellij](https://github.com/zellij-org/zellij)
