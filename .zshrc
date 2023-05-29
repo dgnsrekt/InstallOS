@@ -112,6 +112,7 @@ export GPG_TTY=$(tty) # for GPG keys
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.SpaceVim.d/init.toml"
 
