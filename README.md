@@ -62,16 +62,6 @@ sudo apt autoremove
 
 ```
 
-## Gnome Shell Extensions
-
-- How to list extensions
-
-```bash
-gnome-extensions list
-```
-
-- Install all current_gnome_extensions.txt
-
 ## Install Mononoki Nerd font
 
 ```bash
@@ -354,6 +344,21 @@ npm install --global yarn
 - Install [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
 - Install [docker-compose](https://docs.docker.com/compose/install/)
 - Make sure you can run docker without `sudo`.
+
+## Gnome Shell Extensions
+
+- How to list extensions
+
+```bash
+gnome-extensions list
+```
+
+- Install [emoji-selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
+- Install [burn-my-windows](https://extensions.gnome.org/extension/4679/burn-my-windows/)
+- Install [utcclock](https://extensions.gnome.org/extension/1183/utcclock/)
+- Install [vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- Install [open-weather](https://extensions.gnome.org/extension/750/openweather/)
+- install [sound-output-device-chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
 ## Install Third Party Desktop Applications
 
