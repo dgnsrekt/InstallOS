@@ -35,7 +35,6 @@ sudo apt install gnome-session
 
 - [htop](https://github.com/htop-dev/htop)
 - [glances](https://nicolargo.github.io/glances/)
-- [neovim](https://github.com/neovim/neovim)
 - zsh
 - tree
 - [lolcat](https://github.com/jaseg/lolcat)
@@ -50,7 +49,7 @@ sudo apt install gnome-session
 - vlc
 
 ```bash
-sudo apt install htop glances neovim zsh tree lolcat neofetch gnome-tweaks gnome-shell-extensions snapd bat bpytop ffmpeg flameshot vlc -y
+sudo apt install htop glances zsh tree lolcat neofetch gnome-tweaks gnome-shell-extensions snapd bat bpytop ffmpeg flameshot vlc -y
 
 ```
 
