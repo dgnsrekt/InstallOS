@@ -98,6 +98,7 @@ fc-list | grep "Mononoki Nerd"
 - [SpaceVim](https://spacevim.org/)
 
 ```bash
+sudo snap install nvim
 curl -sLf https://spacevim.org/install.sh | bash
 ```
 
