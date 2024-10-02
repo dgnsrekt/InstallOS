@@ -130,8 +130,8 @@ alias lolmatrix="cmatrix -a | lolcat"
 
 alias tmux="zellij"
 alias zmux="zellij"
-alias top="btm -b"
-alias htop="btm -b"
+#alias top="btm -b"
+#alias htop="btm -b"
 
 alias echopath="checkpath"
 
