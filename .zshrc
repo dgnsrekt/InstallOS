@@ -17,6 +17,7 @@ update_path "$HOME/bin"
 update_path "$HOME/.local/bin"
 update_path "/usr/local/bin"
 update_path "/usr/games"
+update_path "$HOME/.cargo/bin"
 
 # Export for Node Version Manager
 export NVM_DIR="$HOME/.nvm"
