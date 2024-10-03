@@ -1,0 +1,10 @@
+---
+- name: Copy Mononoki Nerd Font
+  copy:
+    src: MononokiNerdFont-Regular.ttf
+    dest: "/usr/local/share/fonts/MononokiNerdFont-Regular.ttf"
+    mode: '0644'
+
+- name: Refresh font cache
+  command: fc-cache -f -v
+  become: false

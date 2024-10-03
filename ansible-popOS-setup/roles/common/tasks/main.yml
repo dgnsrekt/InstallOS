@@ -1,0 +1,52 @@
+---
+- name: Update and upgrade apt packages
+  apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: Remove LibreOffice Core
+  apt:
+    name: libreoffice-core
+    state: absent
+    purge: yes
+
+- name: Clean apt cache and remove unnecessary packages
+  apt:
+    autoclean: yes
+    autoremove: yes
+
+- name: Install essential apt packages
+  apt:
+    name: "{{ packages_apt }}"
+    state: present
+
+- name: Add Flathub repository
+  command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  args:
+    creates: /var/lib/flatpak/repo/flathub.trustedkeys.gpg
+
+- name: Install OBS Studio via Flatpak
+  flatpak:
+    name: com.obsproject.Studio
+    state: present
+    remote: flathub
+
+- name: Install Neovim via Snap
+  snap:
+    name: nvim
+    classic: yes
+    state: present
+
+- name: Install pipx
+  pip:
+    name: pipx
+    executable: pip3
+    extra_args: --user
+  become: false
+
+- name: Ensure ~/.local/bin is in PATH
+  lineinfile:
+    path: "/home/{{ user_name }}/.zshrc"
+    line: 'update_path "$HOME/.local/bin"'
+    state: present
+  become: false

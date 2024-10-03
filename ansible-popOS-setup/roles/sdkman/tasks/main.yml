@@ -1,0 +1,15 @@
+---
+- name: Install SDKMAN
+  shell: curl -s "https://get.sdkman.io" | bash
+  args:
+    executable: /bin/bash
+  environment:
+    SDKMAN_DIR: "/home/{{ user_name }}/.sdkman"
+  become: false
+
+- name: Source SDKMAN in .zshrc
+  lineinfile:
+    path: "/home/{{ user_name }}/.zshrc"
+    line: 'source "$HOME/.sdkman/bin/sdkman-init.sh"'
+    state: present
+  become: false

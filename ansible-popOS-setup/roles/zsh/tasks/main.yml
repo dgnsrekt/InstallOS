@@ -1,0 +1,20 @@
+---
+- name: Install Oh My Zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+  args:
+    executable: /bin/bash
+  become: false
+
+- name: Install Starship prompt
+  shell: sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
+  args:
+    executable: /bin/bash
+  become: false
+
+- name: Ensure Starship is initialized in .zshrc
+  lineinfile:
+    path: "/home/{{ user_name }}/.zshrc"
+    line: 'eval "$(starship init zsh)"'
+    insertafter: 'oh-my-zsh.sh'
+    state: present
+  become: false

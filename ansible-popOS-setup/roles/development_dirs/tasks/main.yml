@@ -1,0 +1,7 @@
+---
+- name: Create development directories
+  file:
+    path: "/home/{{ user_name }}/Development/{{ item }}"
+    state: directory
+  loop: "{{ development_directories }}"
+  become: false
