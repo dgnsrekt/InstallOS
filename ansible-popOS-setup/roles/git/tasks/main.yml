@@ -1,21 +1,31 @@
 ---
 - name: Configure Git user name
-  git_config:
+  ansible.builtin.git_config:
     name: user.name
     value: "{{ git_user_name }}"
     scope: global
+  tags: git
 
 - name: Configure Git user email
-  git_config:
+  ansible.builtin.git_config:
     name: user.email
     value: "{{ git_user_email }}"
     scope: global
+  tags: git
 
 - name: Configure Git core editor
-  git_config:
+  ansible.builtin.git_config:
     name: core.editor
     value: vim
     scope: global
+  tags: git
+
+- name: Check if SSH public key exists
+  ansible.builtin.stat:
+    path: "/home/{{ user_name }}/.ssh/id_rsa.pub"
+  register: ssh_keypair_stat
+  become: false
+  tags: git
 
 - name: Generate SSH key if not present
   openssh_keypair:
@@ -24,24 +34,25 @@
     size: 4096
     owner: "{{ user_name }}"
     group: "{{ user_name }}"
-    mode: '0600'
+    mode: "0600"
     comment: "{{ git_user_email }}"
-    force: no
+    force: false
   register: ssh_keypair
   when: not ssh_keypair_stat.stat.exists
-  vars:
-    ssh_keypair_stat:
-      stat: path="/home/{{ user_name }}/.ssh/id_rsa.pub"
+  become: false
+  tags: git
 
 - name: Start ssh-agent and add key
-  shell: |
+  ansible.builtin.shell: |
     eval "$(ssh-agent -s)"
     ssh-add /home/{{ user_name }}/.ssh/id_rsa
   args:
     executable: /bin/bash
   become: false
+  tags: git
 
 - name: Display public SSH key
-  debug:
+  ansible.builtin.debug:
     msg: "Your public SSH key:\n{{ lookup('file', '/home/' + user_name + '/.ssh/id_rsa.pub') }}"
   become: false
+  tags: git
