@@ -1,12 +1,14 @@
-user_name: "{{ ansible_env.USER }}"
+user_name: "dgnsrekt"
 git_user_name: "dgnsrekt"
 git_user_email: "dgnsrekt@pm.me"
 installos_repo: "git@github.com:dgnsrekt/InstallOS.git"
 development_directories:
+  - projects
   - python
   - javascript
   - rust
   - docker
+  - ansible
 packages_apt:
   - htop
   - glances
