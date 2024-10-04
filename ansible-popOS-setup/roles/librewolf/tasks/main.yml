@@ -1,0 +1,49 @@
+---
+- name: Update apt package index
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Install required packages
+  ansible.builtin.apt:
+    name:
+      - wget
+      - gnupg
+      - lsb-release
+      - apt-transport-https
+      - ca-certificates
+    state: present
+
+- name: Determine the distribution codename
+  ansible.builtin.command: lsb_release -sc
+  register: distro_name
+  changed_when: false
+
+- name: Set default distro codename if not valid
+  ansible.builtin.set_fact:
+    distro: "{{ distro_name.stdout if distro_name.stdout in distro_list else default_distro }}"
+
+- name: Add LibreWolf GPG key
+  ansible.builtin.shell: |
+    wget -O- "{{ librewolf_gpg_url }}" | gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
+  args:
+    executable: /bin/bash
+
+- name: Add LibreWolf repository
+  ansible.builtin.copy:
+    dest: /etc/apt/sources.list.d/librewolf.sources
+    content: |
+      Types: deb
+      URIs: {{ librewolf_repo }}
+      Suites: {{ distro }}
+      Components: main
+      Architectures: amd64
+      Signed-By: /usr/share/keyrings/librewolf.gpg
+
+- name: Update apt package index after adding new repository
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Install LibreWolf
+  ansible.builtin.apt:
+    name: librewolf
+    state: present
