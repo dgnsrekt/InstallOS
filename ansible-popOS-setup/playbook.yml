@@ -1,5 +1,5 @@
 ---
-- name: popOS Setup Playbook
+- name: PopOS Setup Playbook
   hosts: localhost
   become: true
   vars_files:
