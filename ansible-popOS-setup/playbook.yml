@@ -7,10 +7,24 @@
 
   roles:
     - common
-    - git
-    - zsh
-    - sdkman
-    - rust
-    - fonts
-    - dotfiles
-    - development_dirs
+
+    - role: git
+      tags: git
+
+    - role: zsh
+      tags: zsh
+
+    - role: sdkman
+      tags: sdkman
+
+    - role: fonts
+      tags: fonts
+
+    - role: development_dirs
+      tags: development_dirs
+
+    - role: rust
+      tags: rust
+
+    - role: librewolf
+      tags: librewolf
