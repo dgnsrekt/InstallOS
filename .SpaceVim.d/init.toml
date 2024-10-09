@@ -29,11 +29,6 @@
   repo = "mhartington/oceanic-next"
   merged = 0
 
-[[layers]]
-  name = "colorscheme"
-  random_theme = true
-  frequency = "weekly"
-
 [[custom_plugins]]
   repo = "tribela/vim-transparent"
   merged = 0
@@ -79,7 +74,6 @@
 
 #[[layers]]
 #  name = "lang#java"
-
 
 #[[layers]]
 #  name = "lang#scala"

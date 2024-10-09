@@ -241,6 +241,9 @@ ln -s ~/InstallOS/.zshrc ~/.zshrc
 
 mkdir ~/.SpaceVim.d
 ln -s ~/InstallOS/.SpaceVim.d/init.toml ~/.SpaceVim.d/init.toml
+
+rm ~/.config/neofetch/config.conf
+ln -s ~/InstallOS/.config/neofetch/config.conf ~/.config/neofetch/config.conf
 ```
 
 ## Install Python

@@ -131,6 +131,7 @@ alias vim="/snap/bin/nvim"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.SpaceVim.d/init.toml"
 alias sgptconfig="vim ~/.config/shell_gpt/.sgptrc"
+alias neofetchconfig="vim ~/.config/neofetch/config.conf"
 
 alias cat="batcat --paging=never"
 alias bashtop="bpytop"
@@ -146,6 +147,7 @@ alias zmux="zellij"
 
 alias echopath="checkpath"
 alias shell-gpt="sgpt"
+alias shell-lama="sgpt --model ollama/mistral:7b-instruct --no-functions"
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
