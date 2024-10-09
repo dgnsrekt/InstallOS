@@ -236,7 +236,7 @@ cd ~
 rm .bashrc
 rm .zshrc
 
-ln -s ~/InstallOS/.bashrc ~/bashrc
+ln -s ~/InstallOS/.bashrc ~/.bashrc
 ln -s ~/InstallOS/.zshrc ~/.zshrc
 
 mkdir ~/.SpaceVim.d

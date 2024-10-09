@@ -1,18 +1,28 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+function update_path() {
+  local new_dir="$1"
 
-function update_path (){
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        PATH="${PATH:+"$PATH:"}$1"
-    fi
+  # Check if the directory exists
+  if [[ -d "$new_dir" ]]; then
+      # Check if the directory is already in PATH
+      if [[ ":$PATH:" != *":$new_dir:"* ]]; then
+          export PATH="$new_dir:$PATH"
+          echo "Added $new_dir to PATH."
+      else
+          echo "$new_dir is already in PATH."
+      fi
+  else
+      echo "Directory $new_dir does not exist."
+  fi
 }
 
 function checkpath(){
     echo "${PATH//:/$'\n'}" | sort
 }
 
-# set PATH so it includes user's private bin if it exists
-# Needed for pipx / userpath
+update_path "/snap/bin"
 update_path "$HOME/bin"
 update_path "$HOME/.local/bin"
 update_path "/usr/local/bin"
@@ -117,7 +127,7 @@ export GPG_TTY=$(tty) # for GPG keys
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-alias vim="nvim"
+alias vim="/snap/bin/nvim"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.SpaceVim.d/init.toml"
 
@@ -134,6 +144,7 @@ alias zmux="zellij"
 #alias htop="btm -b"
 
 alias echopath="checkpath"
+alias shell-gpt="sgpt"
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
