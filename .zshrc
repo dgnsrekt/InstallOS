@@ -145,9 +145,7 @@ alias zmux="zellij"
 alias echopath="checkpath"
 alias shell-gpt="sgpt"
 alias shell-lama="sgpt --model ollama/mistral:7b-instruct --no-functions"
-#alias shell-gpt-gen-commit='git diff --cached | shell-gpt "Generate git commit message for my changes. Make sure to only write commit messages for lines prepended with a + or - sign."'
-#alias shell-gpt-gen-commit='git diff --cached | sgpt --code "Based on the changes above, create an expertly crafted concise commit message following best practices. Ensure the Summary is less than 72 characters."'
-alias shell-gpt-gen-commit='git diff --cached | sgpt --code "Based on the changes above, create an expertly crafted concise commit message following best practices. Ensure the Summary is less than 72 characters. Stay high-level and combine smaller changes to overarching topics. Skip describing any reformatting changes"'
+alias shell-gpt-gen-commit='git diff --cached | sgpt --code "Craft a concise, high-level commit message following best practices. Ensure the summary is under 72 characters and group smaller changes by topic. Skip reformatting changes and only describe sections with actual changes."'
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
