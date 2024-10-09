@@ -10,8 +10,6 @@ function update_path() {
       if [[ ":$PATH:" != *":$new_dir:"* ]]; then
           export PATH="$new_dir:$PATH"
           echo "Added $new_dir to PATH."
-      else
-          echo "$new_dir is already in PATH."
       fi
   else
       echo "Directory $new_dir does not exist."
