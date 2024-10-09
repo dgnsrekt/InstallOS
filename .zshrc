@@ -147,6 +147,8 @@ alias shell-gpt="sgpt"
 alias shell-lama="sgpt --model ollama/mistral:7b-instruct --no-functions"
 alias shell-gpt-gen-commit='git diff --cached | sgpt --code "Craft a concise, high-level commit message following best practices. Ensure the summary is under 72 characters and group smaller changes by topic. Skip reformatting changes and only describe sections with actual changes."'
 
+alias docker-compose="docker compose"
+
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
 }
