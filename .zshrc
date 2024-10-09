@@ -1,6 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-#
+# The update_path function adds a specified directory to the PATH environment variable if the directory exists and is not already included in PATH. 
 function update_path() {
   local new_dir="$1"
 
@@ -16,6 +14,7 @@ function update_path() {
   fi
 }
 
+# The checkpath function displays the directories in the PATH environment variable, each on a new line, sorted alphabetically.
 function checkpath(){
     echo "${PATH//:/$'\n'}" | sort
 }
@@ -146,7 +145,8 @@ alias zmux="zellij"
 alias echopath="checkpath"
 alias shell-gpt="sgpt"
 alias shell-lama="sgpt --model ollama/mistral:7b-instruct --no-functions"
-alias shell-gpt-gen-commit='git diff --cached | shell-gpt "Generate git commit message for my changes. Make sure to only write commit messages for lines prepended with a + or - sign."'
+#alias shell-gpt-gen-commit='git diff --cached | shell-gpt "Generate git commit message for my changes. Make sure to only write commit messages for lines prepended with a + or - sign."'
+alias shell-gpt-gen-commit='git diff --cached | sgpt --code "Based on the changes above, create an expertly crafted concise commit message following best practices. Ensure the Summary is less than 72 characters."'
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit
