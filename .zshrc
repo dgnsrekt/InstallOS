@@ -148,6 +148,7 @@ alias zmux="zellij"
 alias echopath="checkpath"
 alias shell-gpt="sgpt"
 alias shell-lama="sgpt --model ollama/mistral:7b-instruct --no-functions"
+alias shell-gpt-gen-commit='git diff --cached | shell-gpt "Generate git commit message for my changes."'
 
 function play_movie(){
     cvlc --fullscreen --no-video-title-show $1 vlc://quit

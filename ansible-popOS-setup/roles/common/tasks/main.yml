@@ -1,27 +1,27 @@
 ---
 - name: Update and upgrade apt packages
-  apt:
-    update_cache: yes
+  ansible.builtin.apt:
+    update_cache: true
     upgrade: dist
 
 - name: Remove LibreOffice Core
-  apt:
+  ansible.builtin.apt:
     name: libreoffice-core
     state: absent
-    purge: yes
+    purge: true
 
 - name: Clean apt cache and remove unnecessary packages
-  apt:
-    autoclean: yes
-    autoremove: yes
+  ansible.builtin.apt:
+    autoclean: true
+    autoremove: true
 
 - name: Install essential apt packages
-  apt:
+  ansible.builtin.apt:
     name: "{{ packages_apt }}"
     state: present
 
 - name: Add Flathub repository
-  command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   args:
     creates: /var/lib/flatpak/repo/flathub.trustedkeys.gpg
 
@@ -34,18 +34,18 @@
 - name: Install Neovim via Snap
   snap:
     name: nvim
-    classic: yes
+    classic: true
     state: present
 
 - name: Install pipx
-  pip:
+  ansible.builtin.pip:
     name: pipx
     executable: pip3
     extra_args: --user
   become: false
 
 - name: Ensure ~/.local/bin is in PATH
-  lineinfile:
+  ansible.builtin.lineinfile:
     path: "/home/{{ user_name }}/.zshrc"
     line: 'update_path "$HOME/.local/bin"'
     state: present

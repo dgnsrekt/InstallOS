@@ -6,7 +6,8 @@
     - vars/main.yml
 
   roles:
-    - common
+    - role: common
+      tags: common
 
     - role: git
       tags: git
