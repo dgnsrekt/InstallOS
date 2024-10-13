@@ -60,6 +60,15 @@ sudo apt remove --purge libreoffice-core
 sudo apt clean
 sudo apt autoremove
 
+# Remove system-wide desktop entries
+sudo rm /usr/share/applications/libreoffice-*.desktop
+
+# Remove user-specific desktop entries
+rm ~/.local/share/applications/libreoffice-*.desktop
+
+# Update desktop database
+sudo update-desktop-database
+
 ```
 
 ## Install Mononoki Nerd font
