@@ -31,6 +31,21 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# bun
+[ -s "/home/dgnsrekt/.bun/_bun" ] && source "/home/dgnsrekt/.bun/_bun"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# bun end
+
+# pnpm
+export PNPM_HOME="/home/dgnsrekt/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # SDKMAN
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -93,7 +108,7 @@ export ZSH="/home/dgnsrekt/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git uv ssh starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,11 +141,11 @@ export GPG_TTY=$(tty) # for GPG keys
 #
 alias vim="/snap/bin/nvim"
 alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.SpaceVim.d/init.toml"
+alias vimconfig="vim ~/.config/nvim/"
 alias sgptconfig="vim ~/.config/shell_gpt/.sgptrc"
 alias neofetchconfig="vim ~/.config/neofetch/config.conf"
 
-alias cat="batcat --paging=never"
+#alias cat="batcat --paging=never"
 alias bashtop="bpytop"
 
 alias ll="ls -lah"
@@ -164,3 +179,4 @@ eval "$(starship init zsh)"
 
 clear
 neofetch | lolcat
+
