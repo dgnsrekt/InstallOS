@@ -454,3 +454,4 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 # TODO: sudo apt install fzf ripgrep fdclone luarocks
 # TODO: cargo-binstall ast-grep
 # TODO: npm install -g tree-sitter-cli
+# https://dev.to/gitaroktato/configuring-lazyvim-and-python-on-windows-with-wsl-2fpd
