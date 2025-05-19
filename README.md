@@ -424,7 +424,6 @@ sudo apt install krita
 cargo-binstall zellij
 
 ```
-
 - [Bottom](https://crates.io/crates/bottom)
 
 ```bash
@@ -449,4 +448,8 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 
 
 # TODO: Add section to remove super + L to stop locking the system
+
+# LAZYVIM STUFF
 # TODO: create simlink for lazyvim ln -s ~/InstallOS/.config/nvim ~/.config/nvim
+# TODO: sudo apt install fzf ripgrep fdclone 
+# TODO: cargo-binstall ast-grep
