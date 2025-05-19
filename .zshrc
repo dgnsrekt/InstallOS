@@ -142,8 +142,11 @@ export GPG_TTY=$(tty) # for GPG keys
 alias vim="/snap/bin/nvim"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.config/nvim/"
+alias osconfig="vim ~/InstallOS/"
 alias sgptconfig="vim ~/.config/shell_gpt/.sgptrc"
 alias neofetchconfig="vim ~/.config/neofetch/config.conf"
+alias zshreload="exec zsh"
+alias reloadzsh="exec zsh"
 
 #alias cat="batcat --paging=never"
 alias bashtop="bpytop"
