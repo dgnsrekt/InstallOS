@@ -446,3 +446,6 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 - [FN key fix](https://unix.stackexchange.com/questions/121395/on-an-apple-keyboard-under-linux-how-do-i-make-the-function-keys-work-without-t)
 - [Fix FAN mbpfan](https://github.com/linux-on-mac/mbpfan)
 - [Fix WIFI bcmwl-kernel-source](https://www.linux.org/threads/solved-cannot-get-wifi-recognized-when-installing-popos-22-04-on-2015-macbook-pro.40277/) $ sudo apt install bcmwl-kernel-source
+
+
+# TODO: Add section to remove super + L to stop locking the system
