@@ -449,3 +449,4 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 
 
 # TODO: Add section to remove super + L to stop locking the system
+# TODO: create simlink for lazyvim ln -s ~/InstallOS/.config/nvim ~/.config/nvim
