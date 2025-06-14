@@ -449,9 +449,11 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 
 # TODO: Add section to remove super + L to stop locking the system
 
+# TODO: Add cargo-binstall watchexec-cli
+
 # LAZYVIM STUFF
 # TODO: create simlink for lazyvim ln -s ~/InstallOS/.config/nvim ~/.config/nvim
 # TODO: sudo apt install fzf ripgrep fdclone luarocks
 # TODO: cargo-binstall ast-grep
 # TODO: npm install -g tree-sitter-cli
-# https://dev.to/gitaroktato/configuring-lazyvim-and-python-on-windows-with-wsl-2fpd
+# 
