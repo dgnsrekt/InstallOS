@@ -452,7 +452,8 @@ sudo apt install ubuntu-restricted-extras vlc gimp unrar zip unzip p7zip-full p7
 # TODO: Add cargo-binstall watchexec-cli
 
 # TODO: Add ghostty - https://github.com/mkasberg/ghostty-ubuntu
-# TODO: create simlink for ghostty ln -s ~/InstallOS/.config/ghostty ~/.config/ghostty
+# TODO: create simlink for ghostty | ln -s ~/InstallOS/.config/ghostty ~/.config/ghostty
+# TODO: create simlink for gnome extension shortcuts | ln -s ~/InstallOS/.config/gnome-shell-extensions/shortcuts/ ~/.config/gnome-shell-extensions/shortcuts
 
 # LAZYVIM STUFF
 # TODO: create simlink for lazyvim ln -s ~/InstallOS/.config/nvim ~/.config/nvim

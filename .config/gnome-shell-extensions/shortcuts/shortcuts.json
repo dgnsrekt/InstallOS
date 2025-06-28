@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Window/Workspace Navigation",
+        "shortcuts": [
+            {
+                "key": "Super",
+                "description": "Enter overview"
+            },
+            {
+                "key": "Super + Left/Right",
+                "description": "Tile windows to the left or right"
+            },
+            {
+                "key": "Super + Up",
+                "description": "Maximize window"
+            },
+            {
+                "key": "Alt + F4",
+                "description": "Close window"
+            },
+            {
+                "key": "F11",
+                "description": "Make full screen/restore"
+            },
+            {
+                "key": "Super + Down",
+                "description": "Switch to next workspace"
+            },
+            {
+                "key": "Super + Up",
+                "description": "Switch to previous workspace"
+            },
+            {
+                "key": "Super + Tab",
+                "description": "Switch to next application"
+            }
+        ]
+    },
+    {
+        "name": "WinTile",
+        "shortcuts": [
+            {
+                "key": "Ctrl + Super + Arrow",
+                "description": "Grow a tile in that direction if space is available"
+            },
+            {
+                "key": "Ctrl + drag",
+                "description": "to drop a tiel in a specific spot"
+            },
+            {
+                "key": "Ctrl + Super + drag",
+                "description": "to draw a grid for the new title"
+            }
+        ]
+    },
+    {
+        "name": "Run and Close Applications",
+        "shortcuts": [
+            {
+                "key": "Alt + F2",
+                "description": "Run dialog"
+            },
+            {
+                "key": "Super + B",
+                "description": "Open Chrome"
+            },
+            {
+                "key": "Super + T",
+                "description": "Open Ghostty terminal"
+            },
+            {
+                "key": "Super + Q",
+                "description": "Quit application"
+            }
+        ]
+    },
+    {
+        "name": "System Shortcuts",
+        "shortcuts": [
+            {
+                "key": "Ctrl + Alt + Del",
+                "description": "Opens the shutdown menu"
+            },
+            {
+                "key": "Alt + F2, r",
+                "description": "Restart GNOME Shell"
+            }
+        ]
+    }
+]
