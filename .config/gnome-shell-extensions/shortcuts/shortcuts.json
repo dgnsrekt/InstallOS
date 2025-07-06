@@ -84,6 +84,10 @@
             {
                 "key": "Alt + F2, r",
                 "description": "Restart GNOME Shell"
+            },
+            {
+                "key": "Super + V",
+                "description": "Open Notifications list"
             }
         ]
     }
