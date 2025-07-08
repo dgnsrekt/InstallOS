@@ -148,6 +148,7 @@ alias sgptconfig="vim ~/.config/shell_gpt/.sgptrc"
 alias neofetchconfig="vim ~/.config/neofetch/config.conf"
 alias zshreload="exec zsh"
 alias reloadzsh="exec zsh"
+alias claude="~/.claude/local/claude"
 
 #alias cat="batcat --paging=never"
 alias bashtop="bpytop"
