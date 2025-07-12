@@ -1,0 +1,10 @@
+[user]
+	email = dgnsrekt@pm.me
+	name = dgnsrekt
+	signingkey = 13B9E6608B47E060083EE7E289FD2302CA358D60
+[core]
+	editor = vim
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
