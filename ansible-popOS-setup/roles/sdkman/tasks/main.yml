@@ -1,8 +1,0 @@
----
-- name: Install SDKMAN
-  shell: curl -s "https://get.sdkman.io" | bash
-  args:
-    executable: /bin/bash
-  environment:
-    SDKMAN_DIR: "/home/{{ user_name }}/.sdkman"
-  become: false
