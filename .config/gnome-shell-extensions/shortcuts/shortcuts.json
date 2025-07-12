@@ -33,6 +33,14 @@
             {
                 "key": "Super + Tab",
                 "description": "Switch to next application"
+            },
+            {
+                "key": "Super + A",
+                "description": "Swap Applications left"
+            },
+            {
+                "key": "Super + S",
+                "description": "Swap Applications right"
             }
         ]
     },
@@ -45,11 +53,11 @@
             },
             {
                 "key": "Ctrl + drag",
-                "description": "to drop a tiel in a specific spot"
+                "description": "To drop a tile in a specific spot"
             },
             {
                 "key": "Ctrl + Super + drag",
-                "description": "to draw a grid for the new title"
+                "description": "To draw a grid for the new tile"
             }
         ]
     },
@@ -66,6 +74,10 @@
             },
             {
                 "key": "Super + T",
+                "description": "Open Gnome Terminal"
+            },
+            {
+                "key": "Super + G",
                 "description": "Open Ghostty terminal"
             },
             {
@@ -88,6 +100,15 @@
             {
                 "key": "Super + V",
                 "description": "Open Notifications list"
+            }
+        ]
+    },
+    {
+        "name": "Zellij",
+        "shortcuts": [
+            {
+                "key": "Ctrl + Shift + V",
+                "description": "Paste from clipboard"
             }
         ]
     }
