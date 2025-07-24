@@ -1,4 +1,4 @@
-# The update_path function adds a specified directory to the PATH environment variable if the directory exists and is not already included in PATH. 
+# The update_path function adds a specified directory to the PATH environment variable if the directory exists and is not already included in PATH.
 function update_path() {
   local new_dir="$1"
 
@@ -25,6 +25,7 @@ update_path "$HOME/.local/bin"
 update_path "/usr/local/bin"
 update_path "/usr/games"
 update_path "$HOME/.cargo/bin"
+update_path "$HOME/go/bin"
 
 # Export for Node Version Manager
 export NVM_DIR="$HOME/.nvm"
@@ -53,6 +54,16 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dgnsrekt/.oh-my-zsh"
+
+# Add to .zshrc for better history
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+HISTSIZE=50000
+SAVEHIST=50000
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -180,8 +191,7 @@ function play_movie(){
 #source <(minikube completion zsh)
 
 # STARSHIP CROSS-SHELL PROMPT / https://starship.rs/
-eval "$(starship init zsh)" 
+eval "$(starship init zsh)"
 
 clear
 neofetch | lolcat
-

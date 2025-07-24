@@ -134,3 +134,4 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init bash)"
 
 . "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$PATH"
